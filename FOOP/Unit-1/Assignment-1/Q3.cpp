@@ -1,21 +1,13 @@
-// WAP to check whether the entered number is even or odd
+// Write a C++ program to input three numbers and display its total and average. 
 
 #include<iostream>
 using namespace std;
 
 int main(){
-    int num;
-
-    cout << "Enter the number: ";
-    cin >> num;
-
-    if (num % 2 == 0)
-    {
-        cout << "The number " << num << " is EVEN" << endl;
-    }
-    else{
-        cout << "The number " << num << " is ODD" << endl;
-    }
-    
+    int num1, num2, num3;
+    cout << "Enter three numbers: ";
+    cin >> num1 >> num2 >> num3;
+    cout << "Total: " << num1 + num2 + num3 << endl;
+    cout << "Average: " << (num1 + num2 + num3) / 3;
     return 0;
 }

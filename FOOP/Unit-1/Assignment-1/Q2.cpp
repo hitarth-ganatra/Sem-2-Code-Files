@@ -1,16 +1,12 @@
-// WAP to find area of circle using #define
+// Write a C++ program to display any number entered by the user
 
 #include<iostream>
 using namespace std;
-#define PI 3.14
-
 
 int main(){
-    float radius;
-
-    cout << "Enter the radius : ";
-    cin >> radius;
-
-    cout << "The Area of Circle with Radius " << radius << " is " << PI * radius * radius << endl;
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "You entered: " << num;
     return 0;
 }

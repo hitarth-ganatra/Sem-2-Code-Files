@@ -1,16 +1,13 @@
-// WAP to Find Sum of array elements.
+// 8.	Write a C++ program to input marks of five subjects of a student and calculate total marks and percentage.
 
 #include<iostream>
 using namespace std;
 
 int main(){
-    int arr[5] = {12, 45, 34 ,78, 32}, i, sum = 0;
-
-    for (i = 0; i < 5; i++)
-    {
-        sum += arr[i];
-    }
-    cout << "The sum of all the elements of array is: " << sum << endl;
-    
+    int sub1, sub2, sub3, sub4, sub5;
+    cout << "Enter marks of five subjects: ";
+    cin >> sub1 >> sub2 >> sub3 >> sub4 >> sub5;
+    cout << "Total Marks: " << sub1 + sub2 + sub3 + sub4 + sub5 << endl;
+    cout << "Percentage: " << (sub1 + sub2 + sub3 + sub4 + sub5) / 5 << endl;
     return 0;
 }

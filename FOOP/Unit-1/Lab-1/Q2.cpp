@@ -1,8 +1,9 @@
-// WAP to find area of circle
+// WAP to find area of circle using #define
 
 #include<iostream>
 using namespace std;
 #define PI 3.14
+
 
 int main(){
     float radius;

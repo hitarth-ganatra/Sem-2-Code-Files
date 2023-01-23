@@ -1,21 +1,17 @@
-// WAP program to calculate N * M without using * operator
+// WAP to find whether the entered number is odd or even.
 
 #include<iostream>
 using namespace std;
 
 int main(){
-    int n, m , result = 0;
-    cout << "Enter the value of N: ";
-    cin >> n;
-    cout << "Enter the value of M: ";
-    cin >> m;
-    int temp = m;
-    while (m != 0)
-    {
-        result += n;
-        m--;
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if(num % 2 == 0){
+        cout << "The number is even";
     }
-    
-    cout << n << " * " << temp << " = " << result << endl;
+    else{
+        cout << "The number is odd";
+    }
     return 0;
 }

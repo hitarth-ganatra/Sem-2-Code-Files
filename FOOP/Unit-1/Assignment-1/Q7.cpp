@@ -1,20 +1,17 @@
-// WAP to find maximum element from 1-dimensional array
+// Write a C++ program to read two numbers from user and print their addition, subtraction, multiplication and division on screen.
 
 #include<iostream>
 using namespace std;
 
 int main(){
-    int arr[5] = {34, 56, 12, 89, 78}, i, max = 0;
-
-    for (i = 0; i < 4; i++)
-    {
-        if (arr[i] > max)
-        {
-            max = arr[i];
-        }
-    }
-
-    cout << "The maximum number of array is : " << max << endl;
-    
+    int a, b;
+    cout << "Enter First Number: ";
+    cin >> a;
+    cout << "Enter Second Number: ";
+    cin >> b;
+    cout << "The sum of " << a << " and " << b << " is " << a + b << endl;
+    cout << "The difference of " << a << " and " << b << " is " << a - b << endl;
+    cout << "The multiplication of " << a << " and " << b << " is " << a * b << endl;
+    cout << "The division of " << a << " and " << b << " is " << a / b << endl;
     return 0;
 }
