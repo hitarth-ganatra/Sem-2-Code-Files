@@ -19,7 +19,7 @@ class Employee{
 };
 int Employee::calculations(){
     da = salary + (salary * 0.74);
-    hra = (salary * 0.1);
+    hra = (salary * 0.01);
 }
 int Employee::calculateTax(){
     calculations();

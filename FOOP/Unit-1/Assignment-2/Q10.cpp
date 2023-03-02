@@ -7,7 +7,7 @@ using namespace std;
 class secondsConverter{
     private:
         string time;
-        int total_seconds;
+        int total_seconds;    
     public:
         int hours, minutes, seconds;
         int setData(int hh, int mm, int ss);
