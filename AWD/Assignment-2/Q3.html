@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container{
+        display: grid;
+        width: 500px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .grid-item{
+        width: 150px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        height: 150px;
+    }
+    #g1{
+        background-color: cyan;
+    }
+    #g2{
+        background-color: orange;
+    }
+    #g3{
+        grid-column: 2/4;
+        background-color: greenyellow;
+    }
+    #g4{
+        grid-column: 3/3;
+        grid-row: 1/1;
+        background-color: purple;
+    }
+    #g5{
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: deeppink;
+    }
+    #g6{ 
+        grid-column: 1/1;
+        grid-row: 3/3;
+        background-color: skyblue;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" id="g1">A</div>
+        <div class="grid-item" id="g2">B</div>
+        <div class="grid-item" id="g3">C</div>
+        <div class="grid-item" id="g4">D</div>
+        <div class="grid-item" id="g5">E</div>
+        <div class="grid-item" id="g6">F</div>
+    </div>
+</body>
+</html>

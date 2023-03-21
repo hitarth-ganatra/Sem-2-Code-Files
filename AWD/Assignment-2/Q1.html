@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(20, 173, 32);
+    }
+    .header{
+        background-color: green;
+    }
+    .header ul{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    .header ul li{
+        padding: 10px;
+        font-size:x-large;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        list-style: none;
+    }
+    .mainlist:hover{
+        background-color: violet;
+    }
+    .header ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -10px;
+        padding-left: 0;
+        background-color: violet;
+    }
+    .dropdown li{
+        display: none;
+    }
+    .drop:hover > .dropdown li{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown li:hover{
+        background-color: purple;
+    }
+</style>
+<body>
+    <div class="header">
+        <ul>
+            <li class="mainlist"><a href="#">Home</a></li>
+            <li class="mainlist drop">
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                </ul>
+            </li>
+            <li class="mainlist"><a href="#">About</a></li>
+            <li class="mainlist"><a href="#">Blog</a></li>
+            <li class="mainlist"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
