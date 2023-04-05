@@ -21,7 +21,7 @@ class Tax{
 void net_earning(Salary s, Tax t){
     cout << "Total Salary : " << s.salary * s.days << endl;
     cout << "Total Tax : " << t.sTax + t.iTax << endl;    
-}
+}   
 
 int main(){
     Salary s(100, 20);
